@@ -10,30 +10,11 @@ html {
 }
 
 
-/* main {
-    height: 100%;
-    width: 100%
-} */
-
-
-/* html,
-body {
-    width: 100%;
-    height: 100%;
-} */
-
-
 /* Header */
 
 .landing_message {
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(135deg, rgba(21, 35, 62, 0.9) 0%, rgba(93, 36, 60, 0.8) 100%), url(images/header_bg.jpg) center no-repeat fixed; */
-    /* background: url(images/header_bg.jpg) no-repeat;
-    background-size: cover; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .main_banner {
@@ -59,6 +40,7 @@ body {
     color: white;
     font-size: 50px;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .landing_message_container p {
@@ -81,7 +63,7 @@ body {
 }
 
 .landing_message_container button:hover {
-    background-color: #0604258f;
+    background-color: #291dd1;
 }
 
 .charging {
@@ -115,6 +97,11 @@ body {
     min-width: 100px;
     min-height: 150px;
     line-height: 35px;
+}
+
+.image_box img {
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -154,7 +141,6 @@ body {
     grid-template-rows: 30px;
     grid-template-areas: "img h3" "img p";
     justify-content: left;
-    /* margin-top: ; */
 }
 
 .business img {
@@ -162,7 +148,6 @@ body {
 }
 
 .business h3 {
-    /* margin-top: 10px; */
     grid-area: h3;
 }
 
@@ -186,7 +171,6 @@ body {
 }
 
 .data h3 {
-    /* margin-top: 10px; */
     grid-area: h3;
 }
 
@@ -210,7 +194,6 @@ body {
 }
 
 .visa h3 {
-    /* margin-top: 10px; */
     grid-area: h3;
 }
 
@@ -234,7 +217,6 @@ body {
 }
 
 .dashboard h3 {
-    /* margin-top: 10px; */
     grid-area: h3;
 }
 
@@ -258,7 +240,6 @@ body {
 }
 
 .money h3 {
-    /* margin-top: 10px; */
     grid-area: h3;
 }
 
@@ -267,7 +248,7 @@ body {
 }
 
 
-/* Phonse Grid */
+/* Support Grid */
 
 .support {
     display: grid;
@@ -282,7 +263,6 @@ body {
 }
 
 .support h3 {
-    /* margin-top: 10px; */
     grid-area: h3;
 }
 
@@ -296,8 +276,6 @@ body {
 .middle {
     width: 100%;
     height: 100%;
-    /* margin-bottom: 2; */
-    /* background-image: url(images/section2_bg.jpg); */
 }
 
 .middle_background {
@@ -305,8 +283,6 @@ body {
     height: auto;
     position: absolute;
     z-index: -100;
-    /* margin-bottom: 50px; */
-    /* visibility: hidden; */
 }
 
 .middle_container {
@@ -332,11 +308,294 @@ body {
     color: white;
     cursor: pointer;
     transition-duration: 0.4s;
+    margin-bottom: 50px;
 }
 
 .middle_container button:hover {
-    background-color: #0604258f;
+    background-color: #291dd1;
 }
 
 
-/*  */
+/* Terminals */
+
+.terminals {
+    width: 100%;
+    height: 100%;
+}
+
+.terminals_background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -100;
+}
+
+.terminals_container {
+    width: 100%;
+    height: 100%;
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    row-gap: 30px;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+}
+
+.terminals_message {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.terminals_message h5 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.terminals_message p {
+    margin-top: -55px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+
+.terminals_message button {
+    padding: 15px 80px;
+    border-radius: 30px;
+    background-color: #3c8cff;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.terminals_message button:hover {
+    background-color: #291dd1;
+}
+
+
+/* Phone Image 1 */
+
+.phone1 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.phone1 img {
+    transition: background-color 400ms;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.phone1 img:hover {
+    filter: contrast(140%);
+    transform: scale(1.05);
+}
+
+.phone1 p {
+    font-size: 30px;
+    color: #7e7c7c;
+}
+
+
+/* Phone Image 2 */
+
+.phone2 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.phone2 img {
+    transition: background-color 400ms;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.phone2 img:hover {
+    filter: contrast(140%);
+    transform: scale(1.05);
+}
+
+.phone2 p {
+    font-size: 30px;
+    padding-left: 50px;
+    color: #7e7c7c;
+}
+
+
+/* Phone Image 3 */
+
+.phone3 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.phone3 img {
+    transition: background-color 400ms;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.phone3 img:hover {
+    filter: contrast(140%);
+    transform: scale(1.05);
+}
+
+.phone3 p {
+    font-size: 30px;
+    color: #7e7c7c;
+    padding-left: 30px;
+}
+
+
+/* Phone Image 4 */
+
+.phone4 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.phone4 img {
+    transition: background-color 400ms;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.phone4 img:hover {
+    filter: contrast(140%);
+    transform: scale(1.05);
+}
+
+.phone4 p {
+    font-size: 30px;
+    color: #7e7c7c;
+    padding-left: 50px;
+}
+
+
+/* Phone Image 5 */
+
+.phone5 {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.phone5 img {
+    transition: background-color 400ms;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.phone5 img:hover {
+    filter: contrast(140%);
+    transform: scale(1.05);
+}
+
+.phone5 p {
+    font-size: 30px;
+    color: #7e7c7c;
+    padding-left: 60px;
+}
+
+
+/* Lightbox */
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+
+/* Partners */
+
+.terminals_partners {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 190px;
+    margin-top: 40px;
+}
+
+
+/* Feedback Section */
+
+.feedback {
+    width: 100%;
+    height: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.feedback h6 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.owl-carousel {
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #202020;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer img {
+    filter: brightness(0) invert(1);
+}
+
+footer em {
+    color: #048ef8;
+    cursor: pointer;
+}
+
+footer svg {
+    color: #048ef8
+}
+
+.footer_container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0 2%;
+    color: white;
+}
+
+.footer_icon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    border-top: 2px solid #333;
+    padding-top: 30px;
+    margin-top: 30px;
+}
