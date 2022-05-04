@@ -41,6 +41,7 @@ html {
     font-size: 50px;
     margin-bottom: 20px;
     margin-top: 0;
+    font-weight: 100;
 }
 
 .landing_message_container p {
@@ -82,11 +83,12 @@ html {
 .list_box {
     flex-basis: 53%;
     flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .list_box ul {
-    margin-top: 22%;
-    margin-left: 53.5%;
     margin-right: 5%;
     padding: 9px 0 9px 75px;
     background-image: linear-gradient(to right, #3c8efe, #09c1dc);
@@ -94,8 +96,8 @@ html {
     font-weight: bold;
     font-size: 25px;
     border-radius: 10px;
-    min-width: 100px;
-    min-height: 150px;
+    width: 420px;
+    height: 165px;
     line-height: 35px;
 }
 
@@ -130,6 +132,14 @@ html {
     justify-content: space-evenly;
     grid-template-areas: "business data" "visa dashboard" "money free";
     row-gap: 30px;
+}
+
+.benefits_container h3 {
+    color: #797676;
+}
+
+.benefits_container p {
+    font-weight: bold;
 }
 
 
@@ -400,6 +410,7 @@ html {
 .phone1 p {
     font-size: 30px;
     color: #7e7c7c;
+    padding-left: 30px;
 }
 
 
@@ -424,7 +435,7 @@ html {
 
 .phone2 p {
     font-size: 30px;
-    padding-left: 50px;
+    padding-left: 80px;
     color: #7e7c7c;
 }
 
@@ -523,7 +534,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.5s ease;
+}
+
+#lightbox img {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -598,4 +613,232 @@ footer svg {
     border-top: 2px solid #333;
     padding-top: 30px;
     margin-top: 30px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1635px) {
+    .copyright br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .middle_container h4 {
+        margin-top: 50px;
+    }
+    .terminals_partners {
+        padding: 0px 80px;
+    }
+    footer p br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .list_box {
+        flex-basis: 48%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .middle_container h4 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .middle_container button {
+        padding: 12px 45px;
+    }
+    .terminals_partners {
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .terminals_container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 60px;
+        max-width: 50rem;
+    }
+    .landing_message_container img {
+        margin: 50px 0;
+    }
+    .terminals_message {
+        align-items: center;
+        text-align: center;
+    }
+    .phone2 {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .terminals_partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .terminals_partners img {
+        margin: 3px 3px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .landing_message_container img {
+        margin: 10px 0;
+    }
+    .landing_message_container h1 {
+        font-size: 40px;
+    }
+    .landing_message_container p {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .landing_message_container button {
+        padding: 12px 40px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .list_box ul {
+        width: 370px;
+        height: 145px;
+        line-height: 25px;
+        font-size: 23px;
+    }
+    .benefits_container {
+        grid-template-areas: initial;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle_container h4 {
+        margin-top: 15px;
+    }
+    .terminals_container {
+        margin-top: 75px;
+    }
+    .benefits {
+        margin-bottom: 60px;
+    }
+    .feedback h6 {
+        margin-top: -30px;
+    }
+    #lightbox img {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .middle_container h4 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .terminals_container {
+        grid-template-columns: 1fr;
+        max-width: 20rem;
+    }
+    .terminals_message h5 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 75px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .list_box ul {
+        padding: 9px 0 9px 52px;
+        width: 310px;
+        height: 105px;
+        line-height: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .landing_message_container h1 {
+        font-size: 25px;
+    }
+    .landing_message_container p {
+        font-size: 16px;
+    }
+    .charging_container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .charging {
+        max-width: 25rem;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .middle_container h4 {
+        font-size: 20px;
+    }
+    .middle_container button {
+        margin-bottom: 0;
+        padding: 5px 25px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .terminals_container img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .landing_message_container img {
+        width: 50px;
+    }
+    .benefits h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .benefits_container img {
+        width: 90px;
+    }
+    .benefits_container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .benefits_container {
+        row-gap: 10px;
+    }
+    .benefits_container h3 {
+        margin: 3px;
+    }
+    .benefits_container p {
+        margin: 3px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .benefits_container div {
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .landing_message_container img {
+        width: 50px;
+    }
+    .benefits_container h3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .middle_container h4 {
+        margin-bottom: 5px;
+    }
+    .landing_message_container img {
+        width: 35px;
+    }
 }
